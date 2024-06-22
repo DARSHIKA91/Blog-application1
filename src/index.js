@@ -12,7 +12,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home/>
     },
-    
+    {
+        path: "/blog/:id",
+        element: <BlogView/>
+    }
 ]);
 root.render(<RouterProvider router={router}/>
 );
